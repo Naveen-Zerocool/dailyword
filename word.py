@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 def getword():
-	url = "http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"
+	url = "http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=your_api_key_from_wordnik"
 	response = requests.get(url)
 	js = response.json()
 	word = js["word"]
